@@ -35,15 +35,15 @@ header > h2 {
     text-align: center;
 
 }
-
+/*
 p {
 
-}
+} */
 
-/* Navigation Menu */
+/* Navigation Menu
 nav {
 
-}
+} */
 
 nav > ul {
     padding: 0;
@@ -79,12 +79,35 @@ main {
     justify-content: space-evenly;
     border: .5em solid white;
     border-radius: 10px;
-    float: right;
 }
 
 #community-image {
-    max-height: 400px;
-    max-width: 400px;
+    border-radius: 10px;
+    width: 100%;
+    /*float: right;*/
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.elected-border {
+    border: .25em solid white;
+    border-radius: 10px;
+}
+
+#elected-officials {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.city-officials-img {
+    border-radius: 20px;
+    height: 250px;
+    padding: 1em;
 }
 
 #community-news {
