@@ -93,6 +93,19 @@ figcaption {
     padding-bottom: 1em;
 }
 
+.lehi-img-div {
+    text-align: center;  
+}
+
+.lehi-img {
+    padding-top: 1em;
+    width: 50%;
+}
+
+.lehi-border {
+    border: 1px solid white;
+}
+
 .elected-border {
     border: .25em solid white;
     border-radius: 10px;
