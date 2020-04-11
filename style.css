@@ -5,6 +5,9 @@ html {
 
 body {
     font-family: Lato;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
     margin: 0; /*Sets all margins to 0*/
     background-color: #FF8D18;
 }
@@ -58,8 +61,12 @@ nav > ul > li {
 
 nav > ul > li:hover {
     background-color: white;
-    color: #black;
+    color: black;
     transition: .75s;
+}
+
+.active {
+    color: #FF8D18;
 }
 
 /* Main Content */
@@ -70,6 +77,9 @@ main {
 #main-content {
     display: flex;
     justify-content: space-evenly;
+    border: .5em solid white;
+    border-radius: 10px;
+    float: right;
 }
 
 #community-image {
@@ -81,6 +91,29 @@ main {
     padding-left: 2em;
 }
 
+/*Representatives*/
+dl {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+dd {
+    margin-left: 0em;
+    padding-bottom: .5em;
+}
+
+/*Lists*/
+.faq-bullet {
+    list-style-type: circle;
+}
+
+.fun-bullet {
+    list-style-type: upper-roman;
+    padding: .5em;
+    margin: .5em;
+}
+
 /* Social Media Section */
 #social-media {
     margin: 1em;
@@ -88,10 +121,17 @@ main {
 }
 
 .social-media-image {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: .6em;
+    margin-left: 2em;
+    margin-right: 2em;
     height: 2em;
     width: 2em;
+}
+
+a > img:hover {
+    background-color: white;
+    transition: .75s;
+    border-radius: 50%;
 }
 
 /* Footer */
