@@ -150,6 +150,15 @@ dd {
     margin: .5em;
 }
 
+/*Form*/
+
+.submit-button {
+    background-color: turquoise;
+    padding: .5rem 10rem;
+    border-radius: 5px;
+    display: flex;
+}
+
 /* Social Media Section */
 #social-media {
     margin: 1em;

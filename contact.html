@@ -24,7 +24,40 @@
         </ul>
     </nav>
     <main>
+        <!--Contact Form-->
+        <h1>A Form to Fill Out</h1>
+        <form action="" method="POST" enctype="multipart/form-data" name="practiceForm">
+            <fieldset>
+                <legend>Your Name</legend>
+            <label>First Name: <input name="first" value="" type="text" placeholder="First Name" required></label>
+            <label>Last Name: <input name="last" value="" type="text" placeholder="Last Name" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+            <label>Email: <input type="email" name="email" value="" placeholder="email@example.com"></label>
+            <label>Phone: <input type="tel" name="telephone" value="" placeholder="123-456-7890" required pattern="[0-9]{10}"></label>
+            </fieldset>
 
+            Text Goes Here...
+            <label><input type="radio" name="computer" value="Mac"> Mac</label>
+            <label><input type="radio" name="computer" value="PC"> PC</label>
+            Text Goes Here...
+            <label><input type="checkbox" name="english" value="English"> English</label>
+            <label><input type="checkbox" name="spanish" value="Spanish"> Spanish</label>
+            <label><input type="checkbox" name="french" value="French"> French</label>
+            Tell us something...
+            <textarea name="comments"></textarea>
+            Text goes here...
+            <select name="some-options">
+                <option value="Blank"></option>
+                <option value="Opt. 1">Option 1</option>
+                <option value="Opt. 2">Option 2</option>
+                <option value="Opt. 3">Option 3</option>
+            </select>
+            <input type="hidden" name="redirect" value="success.html">
+            <input type="submit" name="submit" value="Send it!" class="submit-button">
+
+        </form>
     </main>
     <!--Social Media-->
         <section id="social-media">
