@@ -151,9 +151,28 @@ dd {
 }
 
 /*Form*/
+#form-div form fieldset {
+    display: flex;
+}
+
+#form-div form fieldset label span {
+    padding-right: 1rem;
+}
+
+input {
+    border-radius: 2.5px;
+}
+
+textarea {
+    border-radius: 2.5px;
+    height: 7rem;
+    width: 50%;
+}
 
 .submit-button {
-    background-color: turquoise;
+    color: white;
+    margin-top: 1.5rem;
+    background-color: grey;
     padding: .5rem 10rem;
     border-radius: 5px;
     display: flex;
