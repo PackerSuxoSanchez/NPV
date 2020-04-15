@@ -25,46 +25,55 @@
     </nav>
     <main>
         <!--Contact Form-->
-        <h1>Have a question?  We have an answer!</h1>
+        <h1>Have a question or comment?</h1>
+        <h2>We want to hear from you!</h2>
         <div id="form-div">
-        <form action="" method="POST" enctype="multipart/form-data" name="practiceForm">
+        <form action="success.html" method="POST" enctype="multipart/form-data" name="practiceForm">
             <!--Name Form-->
             <fieldset>
                 <legend>Your Name</legend>
-            <label><span>First Name: </span><input name="first" value="" type="text" placeholder="First Name" required></label>
-            <label><span>Last Name: </span><input name="last" value="" type="text" placeholder="Last Name" required></label>
+            <label><span>Name:</span><input name="name" value="" type="text" placeholder="Full Name" required></label>
+            <br>
+            <!--Gender Options-->
+            <label>Gender:</label>
+            <br>
+            <select name="some-options">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="NA">Prefer not to say</option>
+            </select>
             </fieldset>
             <!--Contact Information Form-->
             <fieldset>
                 <legend>Contact Information</legend>
-            <label><span>Email: </span><input type="email" name="email" value="" placeholder="email@example.com"></label>
-            <label><span>Phone: </span><input type="tel" name="telephone" value="" placeholder="123-456-7890" required pattern="[0-9]{10}"></label>
+            <label><span>Email:</span><input type="email" name="email" value="" placeholder="email@example.com" required></label>
+            <br>
+            <label><span>Phone:</span><input type="tel" name="telephone" value="" placeholder="8015551234"  pattern="[0-9]{10}"></label>
             </fieldset>
             <!--Type of Resident-->
             <fieldset>
                 <legend>Are you a...</legend>
-            <label><input type="radio" name="resident" value="current"> Current Resident</label>
-            <label><input type="radio" name="resident" value="future"> Future Resident</label>
-            <label><input type="radio" name="resident" value="curious"> Curious citizen</label>
+            <label><input type="radio" name="resident" value="current" required> Current Resident</label>
+            <br>
+            <label><input type="radio" name="resident" value="future" required> Future Resident</label>
+            <br>
+            <label><input type="radio" name="resident" value="curious" required> Curious citizen</label>
             </fieldset>
             <!--Contact Preference-->
             <fieldset>
                 <legend>How do you prefer to be contacted?</legend>
-            <label><input type="checkbox" name="phone" value="Phone"> Phone</label>
             <label><input type="checkbox" name="email" value="Email"> Email</label>
-            <label><input type="checkbox" name="both" value="Both"> Both</label>
+            <br>
+            <label><input type="checkbox" name="phone" value="Phone"> Phone</label>
+            <br>
+            <label><input type="checkbox" name="no-contact" value="NoContact"> Don't contact me</label>
             </fieldset>
             <!--Comment Box-->
             <p>Tell us something...</p>
-            <textarea name="comments" placeholder="Hello there!"></textarea>
-            <p>Text goes here...</p>
-            <select name="some-options">
-                <option value="Blank"></option>
-                <option value="Opt. 1">Option 1</option>
-                <option value="Opt. 2">Option 2</option>
-                <option value="Opt. 3">Option 3</option>
-            </select>
+            <textarea name="comments" placeholder="Hello there!" required></textarea>
+            
             <!--Redirect Page-->
+            <input type="hidden" name="NPV" value="Contact Page">
             <input type="hidden" name="redirect" value="success.html">
             <!--Submit Button-->
             <input type="submit" name="submit" value="Send it!" class="submit-button">
