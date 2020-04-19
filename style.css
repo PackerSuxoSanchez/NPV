@@ -1,4 +1,4 @@
-/* Universal */
+/* ----- Universal ----- */
 html {
     scroll-behavior: smooth;
 }
@@ -9,14 +9,15 @@ body {
     font-style: normal;
     font-weight: normal;
     margin: 0; /*Sets all margins to 0*/
-    background-color: #FF8D18;
-    /*background-image: url(images/background.gif); need to create first*/
-    /*background-repeat: repeat-x;*/
+    background-color: #D1D1D1;
+    background-image: url(images/background.gif);
+    background-repeat: repeat-x;
 }
 
-#wrapper {
+.wrapper {
     max-width: 900px;
     margin: 0 auto;
+    box-shadow: 5px 5px 5px white;
 }
 
 a {
@@ -28,13 +29,28 @@ a:visited {
     color: black;
 }
 
-/* Header */
+/* ----- Header ----- */
+header {
+    background-color: #FF8D18;
+    background-image: url(images/compass.png);
+    background-repeat: no-repeat;
+    background-position: 4% 2rem;
+    background-size: 100px;
+
+}
+
 h1 {
+    margin: 0 9rem;
+    padding: 1.5rem 0;
     text-align: center;
+    text-shadow: 1px 1px 5px black;
 }
 
 h2, h3 {
     text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Will only style h2 in header */
@@ -42,43 +58,78 @@ header > h2 {
     text-align: center;
 
 }
-/*
-p {
 
-} */
+/* ----- Nav Menu ----- */
 
-/* Navigation Menu
-nav {
+/* Mobile Nav Rules */
+@media only screen and (max-width: 800px) {
+    nav {
+        padding: .5rem 2%;
+        background-color: #B35D08;;
+    }
 
-} */
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+        background-color: #B35D08;
+    }
 
-nav > ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    background-color: #B35D08;
-    /* justify-content: space-evenly; */
+    nav ul li {
+        padding: .5rem 2%;
+        border: solid 1px black;
+        text-align: center;
+        background-color: grey;
+        margin-bottom: .5rem;
+        border-radius: 10px;
+        color: #B35D08;
+    }
+
+    nav ul li:hover {
+        background-color: white;
+        color: black;
+        transition: .75s;
+    }
+
+    .active {
+        color: #FF8D18;
+    }
+
 }
 
-nav > ul > li {
-    color: black;
-    padding: 2rem;
+/* Desktop Nav Rules */
+@media only screen and (min-width: 801px) {
+    nav > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        background-color: #B35D08;
+        /* justify-content: space-evenly; */
+    }
+    
+    nav > ul > li {
+        color: black;
+        padding: 2rem;
+    }
+    
+    nav > ul > li:hover {
+        background-color: white;
+        color: black;
+        transition: .75s;
+    }
+    
+    .active {
+        color: #FF8D18;
+    }
 }
 
-nav > ul > li:hover {
-    background-color: white;
-    color: black;
-    transition: .75s;
-}
 
-.active {
-    color: #FF8D18;
-}
 
-/* Main Content */
+/* ----- Main Content ----- */
 main {
     padding: 2em;
+    background-color: #FF8D18;
+    background: linear-gradient(#FF8D18, #B35D08);
 }
 
 #main-content {
@@ -86,12 +137,13 @@ main {
     justify-content: space-evenly;
     border: .5em solid white;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 #community-image {
     border-radius: 10px;
     width: 100%;
-    /*float: right;*/
+    /*float: right*/
 }
 
 figcaption {
@@ -101,7 +153,8 @@ figcaption {
 }
 
 .lehi-img-div {
-    text-align: center;  
+    text-align: center;
+    background-color: #FF8D18;
 }
 
 .lehi-img {
@@ -110,6 +163,7 @@ figcaption {
 }
 
 .lehi-border {
+    margin: 0;
     border: 1px solid white;
 }
 
@@ -134,7 +188,7 @@ figcaption {
     padding-left: 2em;
 }
 
-/*Representatives*/
+/* ----- Representatives ----- */
 dl {
     text-align: center;
     padding: 1rem;
@@ -146,18 +200,18 @@ dd {
     padding-bottom: .5em;
 }
 
-/*Lists*/
+/* ----- Lists ----- */
 .faq-bullet {
-    list-style-type: circle;
+    list-style-image: url(images/north\ copy.png);
+    margin-bottom: .5rem;
 }
 
 .fun-bullet {
-    list-style-type: upper-roman;
-    padding: .5em;
-    margin: .5em;
+    list-style-image: url(images/idea\ copy.png);
+    margin-bottom: .5rem;
 }
 
-/*Form*/
+/* ----- Form ----- */
 fieldset {
     border: solid 1px grey;
     border-radius: 10px;
@@ -197,9 +251,10 @@ textarea {
     display: flex;
 }
 
-/* Social Media Section */
+/* ----- Social Media Section ----- */
 #social-media {
-    margin: 1em;
+    background-color: #FF8D18;
+    background: linear-gradient(#B35D08, #FF8D18);
     text-align: center;
 }
 
@@ -217,10 +272,11 @@ a > img:hover {
     border-radius: 50%;
 }
 
-/* Footer */
+/* ----- Footer ----- */
 footer {
     padding: 1em;
-    background-color: #B35D08;
+    /*background-color: #B35D08;*/
+    background: linear-gradient(#FF8D18, #B35D08);
 }
 
 footer > p {
