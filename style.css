@@ -123,8 +123,6 @@ header > h2 {
     }
 }
 
-
-
 /* ----- Main Content ----- */
 main {
     padding: 2em;
@@ -150,6 +148,11 @@ figcaption {
     color: white;
     text-align: center;
     padding-bottom: 1em;
+}
+
+/*----- Brochure -----*/
+#brochure-pdf {
+    text-align: center;
 }
 
 .lehi-img-div {
@@ -256,6 +259,36 @@ textarea {
     border-radius: 5px;
     border: solid 1px white;
     display: flex;
+}
+
+/*----- Table -----*/
+table.table {
+    margin-top: 1rem;
+    border: 1px solid grey;
+    background-color: white;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+table.table th {
+    background-color: pink;
+    padding: .5rem;
+}
+
+table.table td {
+    padding: .5rem;
+    border-bottom: solid green 1px;
+}
+
+table.table tr:hover {
+    background-color: indigo;
+    color: white;
+}
+
+table.table tr:nth-child(even) {
+    background-color: lightblue;
 }
 
 /* ----- Social Media Section ----- */
