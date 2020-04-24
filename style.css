@@ -262,7 +262,7 @@ textarea {
 }
 
 /*----- Table -----*/
-table.table {
+table.table-style {
     margin-top: 1rem;
     border: 1px solid grey;
     background-color: white;
@@ -270,25 +270,31 @@ table.table {
     width: 90%;
     margin-left: 5%;
     text-align: center;
+    font-size: large;
 }
 
-table.table th {
-    background-color: pink;
+table.table-style th {
+    background-color: lightgray;
     padding: .5rem;
+    border-bottom: 2px solid black;
 }
 
-table.table td {
+table.table-style td {
     padding: .5rem;
     border-bottom: solid green 1px;
 }
 
-table.table tr:hover {
-    background-color: indigo;
+table.table-style tr:hover {
+    background-color: grey;
     color: white;
 }
 
-table.table tr:nth-child(even) {
+table.table-style tr:nth-child(even) {
     background-color: lightblue;
+}
+
+#audio-player {
+    text-align: center;
 }
 
 /* ----- Social Media Section ----- */
